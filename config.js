@@ -312,6 +312,7 @@ System.config({
       "github:jspm/nodelibs-process@0.1.2.js",
       "github:jspm/nodelibs-process@0.1.2/index.js",
       "github:tochoromero/aurelia-table@0.1.11.js",
+      "github:tochoromero/aurelia-table@0.1.11/au-table-pagination.html!github:systemjs/plugin-text@0.0.8.js",
       "github:tochoromero/aurelia-table@0.1.11/au-table-pagination.js",
       "github:tochoromero/aurelia-table@0.1.11/au-table-select.js",
       "github:tochoromero/aurelia-table@0.1.11/au-table-sort.js",
