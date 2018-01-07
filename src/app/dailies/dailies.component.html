@@ -1,0 +1,22 @@
+<div class="daily">
+  <ul class="list-unstyled daily__list">
+    <li class="daily__item text-left" *ngFor="let i of dailies">
+      {{i.title | trim}}
+      <button type="button" class="btn btn__completed" aria-label="Completed" (click)="markAsCompleted(i)">
+        <span aria-hidden="true">{{isCompleted(i.lastCompleted) ? '&#10003;' : '&#10007;'}}</span>
+      </button>
+    </li>
+    <li class="daily__item" *ngIf="!dailies.length">
+      Add a new daily routine
+    </li>
+  </ul>
+  <div class="daily__input">
+    <input class="input" type="text"
+           title="Input daily"
+           placeholder="A daily routine"
+           autofocus
+           (keyup.enter)="addItem()"
+           [(ngModel)]="input_text">
+    <button class="btn btn__primary" (click)="addItem()">Add</button>
+  </div>
+</div>

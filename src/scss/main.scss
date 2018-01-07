@@ -1,0 +1,13 @@
+/* Normalize */
+@import '~normalize.css';
+/* General styles */
+@import 'variables';
+@import 'general';
+@import 'typography';
+@import 'images';
+@import 'buttons';
+@import 'forms';
+/* Layout styles */
+@import 'layout';
+/* Component styles */
+@import 'card';

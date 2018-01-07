@@ -1,0 +1,27 @@
+<div class="todo">
+  <ul class="list-unstyled todo__list">
+    <li class="todo__item" *ngFor="let i of todo_items" [hidden]="i.isCompleted">
+      <button type="button" class="btn todo__completed" aria-label="Mark as completed" (click)="markAsCompleted(i)">
+        <span aria-hidden="true">&#10003;</span>
+      </button>
+      <span class="todo__title" [ngClass]="{'todo__item--completed' : i.isCompleted}">
+        {{i.title | trim}}
+      </span>
+      <button type="button" class="btn todo__close" aria-label="Close" (click)="deleteTodo(i)">
+        <span aria-hidden="true">&#10007;</span>
+      </button>
+    </li>
+    <li *ngIf="!todo_items.length">
+      Add a new todo item
+    </li>
+  </ul>
+  <div class="todo__input">
+    <input class="input" type="text"
+           title="Input todo"
+           placeholder="What needs to be done?"
+           autofocus
+           (keyup.enter)="addItem()"
+           [(ngModel)]="input_text">
+    <button class="btn btn--primary" (click)="addItem()">Add</button>
+  </div>
+</div>

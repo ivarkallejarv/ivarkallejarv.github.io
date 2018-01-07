@@ -1,0 +1,29 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  margin: $space-y 0 0;
+  background: #fff;
+
+  &__cover {
+    position: relative;
+    margin: 0;
+  }
+  &__block {
+    position: relative;
+    padding: 0 $space-x $space-y;
+    overflow: hidden;
+  }
+  &__block:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: $space-x;
+    right: $space-x;
+    display: block;
+    height: 1px;
+    background: rgba(33, 37, 41, .2);
+  }
+  &__block:last-child:after {
+    display: none;
+  }
+}

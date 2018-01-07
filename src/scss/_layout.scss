@@ -1,0 +1,21 @@
+.app {
+  /* So long as there isn't a menu, this is inactive */
+  // padding-top: 3rem;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    // max-width: $max-width;
+    // margin: auto;
+    padding: 0 $space-x;
+  }
+
+  &__topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $bg;
+  }
+}

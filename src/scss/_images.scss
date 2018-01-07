@@ -1,0 +1,22 @@
+img {
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+.cover {
+  position: relative;
+  display: block;
+  padding-bottom: 50%;
+  overflow: hidden;
+  background: rgba(33, 37, 41, .2);
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    outline: none;
+  }
+}
