@@ -1,0 +1,20 @@
+permalink:           pretty
+
+# Setup
+title:               Ivar Kallejärv
+tagline:             'A rant'
+description:         'A place to vent and/or discuss things'
+url:                 https://ivarkallejarv.github.io/
+baseurl:             'https://ivarkallejarv.github.io/'
+paginate:            5
+
+# About/contact
+author:
+  name:              Ivar Kallejärv
+  url:               https://ivarkallejarv.github.io/
+  email:             ivar.kallejarv@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+plugins:             ["jekyll-paginate", "jekyll-gist"]
